@@ -2,21 +2,6 @@ import { layersThree, homeLine } from "@comercti/icons-hmg";
 import { computed, ref } from "vue";
 
 export const useDefault = () => {
-  interface SubMenu {
-    text: string;
-    path: string;
-    options?: unknown[];
-    icon?: string;
-  }
-
-  interface ItensMenu {
-    text: string;
-    path?: string;
-    icon?: string;
-    description?: string;
-    subMenu?: SubMenu[];
-  }
-
   const menuAberto = ref(false);
   const paginaInicial = ref(false);
 
@@ -272,15 +257,6 @@ export const useDefault = () => {
     menuAberto.value = clicado;
   };
 
-  const redirecionar = (path: ItensMenu | SubMenu) => {
-    // router.push(path);
-  };
-
-  const voltarPaginaIncial = () => {
-    // router.push("/home");
-    paginaInicial.value = true;
-  };
-
   const itemsPerPage = 6;
   const currentPage = ref(1);
 
@@ -312,7 +288,5 @@ export const useDefault = () => {
     currentPage,
     updatePage,
     abriMenu,
-    redirecionar,
-    voltarPaginaIncial,
   };
 };

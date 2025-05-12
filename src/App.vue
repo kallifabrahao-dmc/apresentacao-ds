@@ -22,8 +22,6 @@ const {
   currentPage,
   updatePage,
   abriMenu,
-  redirecionar,
-  voltarPaginaIncial,
 } = useDefault();
 </script>
 
@@ -34,7 +32,6 @@ const {
         <CeMenuHeader
           :items-menu-my-service="itemsMenuMyService"
           :items-menu="items"
-          @backToHome="voltarPaginaIncial"
         />
       </div>
     </template>
@@ -45,7 +42,6 @@ const {
         :items="items"
         :is-home="paginaInicial"
         :is-search="true"
-        @redirect="redirecionar"
       />
     </template>
 
