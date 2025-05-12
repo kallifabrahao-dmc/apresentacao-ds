@@ -9,18 +9,24 @@ importers:
   .:
     dependencies:
       '@comercti/icons-hmg':
-        specifier: ^0.0.34
-        version: 0.0.34(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))
+        specifier: ^0.0.35
+        version: 0.0.35(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))
       '@comercti/vue-components-hmg':
-        specifier: ^0.0.34
-        version: 0.0.34(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))
+        specifier: ^0.0.35
+        version: 0.0.35(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))
       '@comercti/web-components-hmg':
         specifier: ^0.0.34
         version: 0.0.34(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.3)
+      vue-router:
+        specifier: ^4.5.1
+        version: 4.5.1(vue@3.5.13(typescript@5.8.3))
     devDependencies:
+      '@types/vue-router':
+        specifier: ^2.0.0
+        version: 2.0.0(vue@3.5.13(typescript@5.8.3))
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
         version: 5.2.4(vite@6.3.5)(vue@3.5.13(typescript@5.8.3))
@@ -56,13 +62,13 @@ packages:
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
 
-  '@comercti/icons-hmg@0.0.34':
-    resolution: {integrity: sha512-jDxJXwrJzSlDRetv1obc3hkItCwQzqpSOvBTgDYd/g9KdM7HhDqgYkyoGz1wKxQHLiqVggnh8mn63DFDUYuTZg==}
+  '@comercti/icons-hmg@0.0.35':
+    resolution: {integrity: sha512-osFqSSl6+UtkAOGj6OYHMOOQUG1xkOrVQauB6bDqAkTI3ZcjYvfA/oSow2+UZ3sqqF9zGR49N61Z4TLldnKCeA==}
     peerDependencies:
       vue: '>=3.2.0'
 
-  '@comercti/vue-components-hmg@0.0.34':
-    resolution: {integrity: sha512-rDFBZnTFVGn6/5MgzQOsClHGFRAFo9YQoNPNXBKnaCUD/j4KFBrRJOOt/p7vTugU0XJPvyxm5ad0BjkKdNWYig==}
+  '@comercti/vue-components-hmg@0.0.35':
+    resolution: {integrity: sha512-8+mwLgkzFWE0XmaqY2Mgfmmmr9s29o8ZQqRnEu0Ut0OUFWjjWQP3tR5Mxz1ZTgJoHg8M1OF8k8IYUZUVFTDZSA==}
     peerDependencies:
       vue: '>=3.2.0'
 
@@ -327,6 +333,10 @@ packages:
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
+  '@types/vue-router@2.0.0':
+    resolution: {integrity: sha512-E454lQ6tp9ftVWdZ8VGZpRcIV4YeqVAcx/uifl3P1GGwscYsxOFdYfgIuKasKO0Fm6Np2JM/L378D3bcRQE9hg==}
+    deprecated: This is a stub types definition for vue-router (https://github.com/vuejs/vue-router). ecmarkup provides its own type definitions, so you don\'t need @types/ecmarkup installed!
+
   '@vitejs/plugin-vue@5.2.4':
     resolution: {integrity: sha512-7Yx/SXSOcQq5HiiV3orevHUFn+pmMB4cgbEkDYgnkUWb0WfeQ/wa2yFv6D5ICiCQOVpjA7vYDXrC7AGO8yjDHA==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -386,6 +396,9 @@ packages:
 
   '@vue/compiler-vue2@2.7.16':
     resolution: {integrity: sha512-qYC3Psj9S/mfu9uVi5WvNZIzq+xnXMhOwbTFKKDD7b1lhpnn71jXSFdTQ+WsIEk0ONCd7VV2IMm7ONl6tbQ86A==}
+
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   '@vue/language-core@2.2.10':
     resolution: {integrity: sha512-+yNoYx6XIKuAO8Mqh1vGytu8jkFEOH5C8iOv3i8Z/65A7x9iAOXA97Q+PqZ3nlm2lxf5rOJuIGI/wDtx/riNYw==}
@@ -719,6 +732,11 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
+  vue-router@4.5.1:
+    resolution: {integrity: sha512-ogAF3P97NPm8fJsE4by9dwSYtDwXIY1nFY9T6DyQnGHd1E2Da94w9JIolpe42LJGIl0DwOHBi8TcRPlPGwbTtw==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue-tsc@2.2.10:
     resolution: {integrity: sha512-jWZ1xSaNbabEV3whpIDMbjVSVawjAyW+x1n3JeGQo7S0uv2n9F/JMgWW90tGWNFRKya4YwKMZgCtr0vRAM7DeQ==}
     hasBin: true
@@ -753,7 +771,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@comercti/icons-hmg@0.0.34(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))':
+  '@comercti/icons-hmg@0.0.35(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@wdns/vue-code-block': 2.3.5(typescript@5.8.3)
       highlight.js: 11.11.1
@@ -767,7 +785,7 @@ snapshots:
       - typescript
       - vitest
 
-  '@comercti/vue-components-hmg@0.0.34(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))':
+  '@comercti/vue-components-hmg@0.0.35(typescript@5.8.3)(vitest@3.1.3)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@wdns/vue-code-block': 2.3.5(typescript@5.8.3)
       highlight.js: 11.11.1
@@ -934,6 +952,12 @@ snapshots:
 
   '@types/estree@1.0.7': {}
 
+  '@types/vue-router@2.0.0(vue@3.5.13(typescript@5.8.3))':
+    dependencies:
+      vue-router: 4.5.1(vue@3.5.13(typescript@5.8.3))
+    transitivePeerDependencies:
+      - vue
+
   '@vitejs/plugin-vue@5.2.4(vite@6.3.5)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       vite: 6.3.5
@@ -1025,6 +1049,8 @@ snapshots:
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
+
+  '@vue/devtools-api@6.6.4': {}
 
   '@vue/language-core@2.2.10(typescript@5.8.3)':
     dependencies:
@@ -1351,6 +1377,11 @@ snapshots:
       - yaml
 
   vscode-uri@3.1.0: {}
+
+  vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.13(typescript@5.8.3)
 
   vue-tsc@2.2.10(typescript@5.8.3):
     dependencies:
