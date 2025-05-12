@@ -77,12 +77,12 @@ const {
           </div>
         </template>
 
-        <template #actionsBtn="{ item }">
+        <template #actionsBtn>
           <button class="mr-2">
-            <ceSvgIcon :name="pen" size="15" />
+            <CeSvgIcon :name="pen" size="15" />
           </button>
           <button class="mr-2">
-            <ceSvgIcon :name="trash01" size="15" />
+            <CeSvgIcon :name="trash01" size="15" />
           </button>
         </template>
 
