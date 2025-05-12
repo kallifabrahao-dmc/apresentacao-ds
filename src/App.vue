@@ -4,25 +4,11 @@ import {
   CeMenuHeader,
   CeMenuSidebar,
   CeFooter,
-  CeDataTable,
-  CePagination,
-  CeSvgIcon,
 } from "@comercti/vue-components-hmg";
 import { useDefault } from "./useDefault";
-import { pen, trash01 } from "@comercti/icons-hmg";
 
-const {
-  items,
-  itemsMenuMyService,
-  menuAberto,
-  paginaInicial,
-  headers,
-  paginatedItems,
-  totalPages,
-  currentPage,
-  updatePage,
-  abriMenu,
-} = useDefault();
+const { items, itemsMenuMyService, menuAberto, paginaInicial, abriMenu } =
+  useDefault();
 </script>
 
 <template>
