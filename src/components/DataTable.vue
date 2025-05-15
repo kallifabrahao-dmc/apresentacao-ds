@@ -43,14 +43,16 @@
     <template #title>Usuários</template>
 
     <template #groupButton>
-      <div
-        class="flex sm:flex-col sm:mb-2 space-x-2 sm:space-x-0 sm:space-y-2 w-auto sm:w-full"
-      >
-        <button class="bg-blue-500 p-3 rounded-lg text-white w-28 sm:w-full">
-          Enviar
+      <div className="flex gap-2">
+        <button
+          className="border-[1px] h-10 rounded-lg text-ce_medium_gray w-28 sm:w-full"
+        >
+          Baixar
         </button>
-        <button class="bg-red-500 p-3 rounded-lg text-white w-28 sm:w-full">
-          Excluir
+        <button
+          className="bg-ce_green rounded-lg text-white w-28 sm:w-full h-10"
+        >
+          Upload
         </button>
       </div>
     </template>
